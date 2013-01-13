@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+*.aux
+*.log
+*.toc
+*.out
+*.tmp
+spick_main.pdf
+=======
+*.aux
+*.log
+*.toc
+*.out
+*.tmp
+autobuild/build/*
+autobuild/tmp/*
+autobuild/latestversion
+>>>>>>> 597b5ecd0a31e0963878232b500255b3803e78e2
