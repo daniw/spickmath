@@ -20,3 +20,31 @@
 Aufgabe: \\\\
 Bestimmen Sie eine Polynomfunktion 3. Grades welche ihren Wendepunkt in $(x, y)$ = $(0, 1)$ mit einem Steigungswinkel von 45° hat, und die Kurve $y = \frac{5}{3}$ berührt. Machen Sie davon eine Skizze.\\\\
 
+Lösung: \\\\
+\[ f(x) = ax^3 + bx^2 + cx^1 + d \]
+\[ \text{WP in }P(0,1) = (x_p, y_p) \]
+\[ m_p = 1 \]
+\[ \text{berührt }y = \frac{5}{3} \]
+\[ \Rightarrow f''(x_p) \stackrel{!}{=} 0 \]
+\[ \Rightarrow f(x_p) \stackrel{!}{=} y_p \]
+\[ \Rightarrow f'(x_p) \stackrel{!}{=} 1 \]
+\[ \Rightarrow f'(x_e) = 0 \land f''(x_e) < 0 \]
+\[ \Rightarrow f(x_e) = \frac{5}{3} \]
+\[ f(x) = ax^3 + bx^2 + cx + d \]
+\[ f'(x) = 3ax^2 + 2bx + c \]
+\[ f''(x) = 6ax + 2b \]
+\[ \xout{6a0} + 2b = 0 \quad \Rightarrow b = 0 \]
+\[ \xout{a0 + b0 + c0} + d = 1 \quad \Rightarrow d = 1 \]
+\[ \xout{3a0 + 2b0} + c = 1 \quad \Rightarrow c = 1 \]
+\[ 3a{x_e}^2 + \xout{2bx_e} + 1 = 0 \]
+\[ a{x_e}^3 + \xout{b{x_e}^2 + c}x_e + 1 = \frac{5}{3} \quad \Rightarrow a{x_e}^3 + x_e + 1 \]
+\[ \left|\begin{array}{rl}
+b            &= 0\\
+d            &= 1\\
+c            &= 1 \\
+3a{x_e}^2 + 1 &= 0\\
+a{x_e}^3 + 1 &= \frac{5}{3}
+\end{array}\right| \]
+\[ \Rightarrow \text{solve mit TR} \]
+\[ \Rightarrow a = -\frac{1}{3} \]
+\[ \Rightarrow \underline{\underline{f(x) = -\frac{1}{3}x^3 + x+1}} \]
