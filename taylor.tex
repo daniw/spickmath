@@ -32,22 +32,16 @@ Berechnen Sie das Taylorpolynom 3. Grades von f(x) um den Punkt x=1 mit dem Tasc
 \[ = \frac{(3 + x)^2 - (x - 1) \cdot 2 \cdot (3 + x)}{(3 + x)^4} = \frac{(3 + x) - 2 \cdot (x - 1)}{(3 + x)^3} = \frac{3 + x - 2x + 2}{(3 + x)^3} = \frac{5 - x}{(3 + x)^3} \]
 \[ f''(x) = \frac{(5 - x)' \cdot (3 + x)^3 - (5 - x)\cdot((3 + x)^3)'}{((3 + x)^3)^2} = \frac{(-1) \cdot (3 + x)^3 - (5 - x)\cdot3(3 + x)^2}{(3 + x)^6} \]
 \[ = \frac{(-1) \cdot (3 + x) - (5 - x) \cdot 3}{(3 + x)^4} = \frac{-3 - x - 15 + 3x}{(3 + x)^4} = \frac{2x - 18}{(3 + x)^4} \]
-\[ f'''(x) = \frac{}{} \]
-\[  \]
-\[  \]
-\[  \]
-\[  \]
-\[  \]
-\[  \]
-\[  \]
-\[  \]
-b)\\
-Bestimmen Sie mit Hilfe von a) näherungsweise das Integral $\int_0^1 f(x) dx$. Runden Sie das Resultat bis auf 3 Stellen nach dem Komma und vergleichen Sie es mit dem direkten Resultat des Tschenrechners. 
-\[  \]
-\[  \]
-\[  \]
-c)\\
-Verwenden Sie eine Binomische Reihe um die Taylorreihe von $f(x)$ um $x=1$ zu berechnen. Hinweis: entwickeln Sie $f(1+h)$ in eine MacLaurin Reihe
-\[  \]
-\[  \]
-\[  \]
+\[ f'''(x) = \frac{2 \cdot (3 + x)^4 - (2x - 18) \cdot 4 \cdot (3 + x)^3}{((3 + x)^4)^2} = \frac{(3 + x)^3 \cdot (2 \cdot (3 + x) - 4 \cdot (2x - 18))}{(3 + x)^8} \]
+\[ = \frac{2 \cdot (3 + x) - 4 \cdot (2x - 18)}{(3 + x)^5} = \frac{6 + 2x - 8x + 18 \cdot 4}{(3 + x)^5} = \frac{-6x + 78}{(3 + x)^5} \]
+Taylorreihe zusammensetzen
+\[ T_{(3, x_0)}(x) = \frac{f(x_0)}{0!}(x - x_0)^0 + \frac{f'(x_0)}{1!}(x - x_0)^1 + \frac{f''(x_0)}{2!}(x - x_0)^2 + \frac{f'''(x_0)}{3!}(x - x_0)^3 \]
+\[ T_{(3, x_0)}(x) = \frac{\frac{1-1}{(3+1)^2}}{0!}(x - 1)^0 + \frac{\frac{5 - 1}{(3 + 1)^3}}{1!}(x - 1)^1 + \frac{\frac{2\cdot1 - 18}{(3 + 1)^4}}{2!}(x - 1)^2 + \frac{\frac{-6\cdot1 + 78}{(3 + 1)^5}}{3!}(x - 1)^3 \]
+\[ T_{(3, x_0)}(x) = 0 + \frac{\frac{4}{(4)^3}}{1!}(x - 1)^1 + \frac{\frac{-16}{(4)^4}}{2!}(x - 1)^2 + \frac{\frac{72}{(4)^5}}{3!}(x - 1)^3 \]
+\[ T_{(3, x_0)}(x) = \frac{\frac{1}{(4)^2}}{1!}(x - 1)^1 + \frac{-\frac{1}{(4)^2}}{2!}(x - 1)^2 + \frac{\frac{18}{(4)^4}}{3!}(x - 1)^3 \]
+\[ T_{(3, x_0)}(x) = \frac{\frac{1}{16}}{1}(x - 1)^1 + \frac{-\frac{1}{16}}{2}(x - 1)^2 + \frac{\frac{18}{256}}{6}(x - 1)^3 \]
+\[ \underline{\underline{T_{(3, x_0)}(x) = \frac{1}{16}(x - 1)^1 - \frac{1}{32}(x - 1)^2 + \frac{3}{256}(x - 1)^3}} \]
+% b)\\
+% Bestimmen Sie mit Hilfe von a) näherungsweise das Integral $\int_0^1 f(x) dx$. Runden Sie das Resultat bis auf 3 Stellen nach dem Komma und vergleichen Sie es mit dem direkten Resultat des Tschenrechners. 
+% c)\\
+% Verwenden Sie eine Binomische Reihe um die Taylorreihe von $f(x)$ um $x=1$ zu berechnen. Hinweis: entwickeln Sie $f(1+h)$ in eine MacLaurin Reihe
